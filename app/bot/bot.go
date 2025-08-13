@@ -3,11 +3,12 @@ package bot
 import (
 	"context"
 	"fmt"
+	"time"
+
 	"github.com/go-telegram/bot"
 	"github.com/go-telegram/bot/models"
 	"github.com/v03413/bepusdt/app/conf"
 	"github.com/v03413/bepusdt/app/log"
-	"time"
 )
 
 var api *bot.Bot
@@ -86,8 +87,20 @@ func Start() {
 		ReplyMarkup: models.InlineKeyboardMarkup{
 			InlineKeyboard: [][]models.InlineKeyboardButton{
 				{
-					{Text: "📢 关注频道", URL: "https://t.me/BEpusdtChannel"},
-					{Text: "💬 社区交流", URL: "https://t.me/BEpusdtChat"},
+					{Text: "开始使用", CallbackData: cmdStart},
+					{Text: "订单列表", CallbackData: cmdOrder},
+				},
+			},
+		},
+	})
+	SendMessage(&bot.SendMessageParams{
+		ChatID: conf.BotAdminID(),
+		Text:   Welcome(),
+		ReplyMarkup: models.InlineKeyboardMarkup{
+			InlineKeyboard: [][]models.InlineKeyboardButton{
+				{
+					{Text: "获取ID", CallbackData: cmdGetId},
+					{Text: "收款状态", CallbackData: cmdState},
 				},
 			},
 		},
