@@ -7,11 +7,11 @@ listen = ":8080"
 # 静态资源路径，例如：/root/bepusdt/static；通过此参数可自定义模板，参考static目录，如非必要不建议修改。
 static_path = ""
 # SQLite数据库路径
-sqlite_path = "/www/wwwroot/BEpusdt-main/sqlite.db"
+sqlite_path = "sqlite.db"
 # Tron网络GRPC节点，可选列表：https://developers.tron.network/docs/networks#public-node
 tron_grpc_node = "18.141.79.38:50051"
 # 日志输出路径
-output_log = "/www/wwwroot/BEpusdt-main/bepusdt.log"
+output_log = "bepusdt.log"
 # Webhook地址，留空则不弃用
 webhook_url = ""
 
