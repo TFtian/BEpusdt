@@ -8,3 +8,10 @@
 [36mINFO[0m[2025-08-13 14:42:58] 当前 USDC_CNY 计算汇率： 7.12                       
 [31mERRO[0m[2025-08-13 14:42:58] Okx TRX_USDT 汇率获取失败 okx resp error:Get "https://www.okx.com/priapi/v3/growth/convert/currency-pair-market-movement?baseCurrency=TRX&quoteCurrency=CNY&bar=4H&limit=1&t=1755067373": context deadline exceeded (Client.Timeout exceeded while awaiting headers) 
 [36mINFO[0m[2025-08-13 14:42:58] 当前 TRX_CNY 计算汇率： 2.63                        
+[36mINFO[0m[2025-09-01 08:43:35] WEB尝试启动 Listen:  :8080                       
+[31mERRO[0m[2025-09-01 08:43:36] Okx TRX_USDT 汇率获取失败 okx resp status code:403 
+[36mINFO[0m[2025-09-01 08:43:36] 当前 TRX_CNY 计算汇率： 0                           
+[31mERRO[0m[2025-09-01 08:43:36] Okx USDT_CNY 汇率获取失败 okx resp status code:403 
+[36mINFO[0m[2025-09-01 08:43:36] 当前 USDT_CNY 计算汇率： 0                          
+[31mERRO[0m[2025-09-01 08:43:36] Okx USDC_CNY 汇率获取失败 okx resp status code:403 
+[36mINFO[0m[2025-09-01 08:43:36] 当前 USDC_CNY 计算汇率： 0                          
